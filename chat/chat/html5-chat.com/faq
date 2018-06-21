@@ -1,0 +1,223 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Faq about the html5 chat</title>
+
+<script src="/js/jquery-1.11.1.min.js"></script>
+<script src="/js/bootbox.min.js" defer></script>
+<script src="/js/bootstrap.min.js" defer></script>
+<script src="js/footer.js" defer></script><link rel='icon' type='image/png' href='/img/favicon.png' />
+<link rel='stylesheet' type='text/css' href='/css/bootstrap.min.css'>
+<link rel='stylesheet' type='text/css' href='/css/site.min.css'>
+
+<style>
+
+.centered-form {
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.centered-form .panel {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+h4{
+	margin-top:30px;
+}
+.contactInput {
+	font-size:2.2em;
+	border:5px solid #38AAFC;
+	border-radius:8px;
+    padding: 5px;
+	display:block;
+	margin:20px auto;
+	height: auto;
+}
+</style>
+
+</head>
+
+<body>
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+        <i class="fa fa-comments-o"></i> HTML5 Chat</h1>
+        <a href="#" id="menuLink">Menu</a>
+        <nav>            
+            <a href="/">Home</a>
+            <a href="/chat">Enter chat</a>
+            <a href="/register">Get chat</a>
+            <a href="/purchase">Purchase chat</a>
+            <a href="/features">Features</a>
+            <a href="/faq">FAQ</a>
+            <a href="/developers">Developers</a>
+         	<a href="/contact">Contact</a>
+        </nav>
+        
+        <div class="dropdown langue">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="/img/en.svg" class="flag" alt="en"> Langue
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="https://fr.html5-chat.com">Fr<img class="flag" src="/img/fr.svg" alt="version française" ></a></li>
+            <li><a href="https://html5-chat.com">En<img class="flag" src="/img/en.svg" alt="english version"></a></li>
+              <li><a href="https://es.html5-chat.com">Es<img class="flag" src="/img/es.svg" alt="Versión española"></a></li>
+              <li><a href="https://de.html5-chat.com">DE<img class="flag" src="/img/de.svg" alt="Deutsch Version"></a></li>
+              <li><a href="https://ru.html5-chat.com">RU<img class="flag" src="/img/ru.svg" alt="Russian Version"></a></li>
+          </ul>
+        </div>
+        <div id="adminDiv">
+        	<a href="/chatadmin"><i class="fa fa-lock"></i> Admin access</a>
+        </div>
+        
+        </div>
+        
+        
+    </div>
+</header><div class="container fadeInDown animated" id="container1">
+	<h4 style="text-align: center;">
+    	<p>Here you can find the most common questions/answers about the html5 chat</p>
+     	<p>If you cannot find the answer to your question, please use the <a href="/contact">contact form</a>.</p>
+    </h4>
+    
+<div class="panel-group" id="faqAccordion">
+          
+          <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question0">
+              <h4 class="panel-title">
+                    <a href="#" class="ing"><i class="fa fa-question-circle"></i> What is HTML5 chat for ?</a>
+              </h4>
+            </div>
+            <div id="question0" class="panel-collapse collapse">
+              <div class="panel-body">
+                    <h5><span class="label label-primary">answer</span></h5>
+                    <p>HTML5 chat allows you to quickly intergate a full video chat to your website or blog</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question1">
+              <h4 class="panel-title">
+                    <a href="#" class="ing"><i class="fa fa-question-circle"></i> Is HTML5 chat free ?</a>
+              </h4>
+            </div>
+            <div id="question1" class="panel-collapse collapse">
+              <div class="panel-body">
+                    <h5><span class="label label-primary">answer</span></h5>
+                    <p>Yes: we have a free version and a paid version</p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question2">
+              <h4 class="panel-title">
+                    <a href="#" class="ing"><i class="fa fa-question-circle"></i> What is the difference between the free and paid version ?</a>
+              </h4>
+            </div>
+            <div id="question2" class="panel-collapse collapse">
+              <div class="panel-body">
+                    <h5><span class="label label-primary">answer</span></h5>
+                    <p>The free version has some limited features like limited number of rooms, limited number of webcam, limited bandwith for webcams, and generally speaking less features.<br>The paid version has unlimited features.                    </p>
+              </div>
+            </div>
+          </div>  
+          
+          <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question3">
+              <h4 class="panel-title">
+                    <a href="#" class="ing"><i class="fa fa-question-circle"></i> How much cost the paid version ?</a>
+              </h4>
+            </div>
+            <div id="question3" class="panel-collapse collapse">
+              <div class="panel-body">
+                    <h5><span class="label label-primary">answer</span></h5>
+                    <p><a href="/register" title="register chat">Just check the prices here !</a> </p>
+              </div>
+            </div>
+          </div>       
+          
+          <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question4">
+              <h4 class="panel-title">
+                    <a href="#" class="ing"><i class="fa fa-question-circle"></i> How to integrate the chat to my existing website ?</a>
+              </h4>
+            </div>
+            <div id="question4" class="panel-collapse collapse">
+              <div class="panel-body">
+                    <h5><span class="label label-primary">answer</span></h5>
+                    <p>
+                        <a href='/register' title='register chat'>First register.</a><br>Then you will receive 1 line of jaavscript code. Just insert that javascript code to your website and that's all.<br>  You can also make a direct link to the chat. (Link is provided in the email as well)                     </p>
+              </div>
+            </div>
+          </div>                  
+          
+          
+          <div class="panel panel-default ">
+            <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5">
+              <h4 class="panel-title">
+                    <a href="#" class="ing"><i class="fa fa-question-circle"></i> How can I administrate my chat ?</a>
+              </h4>
+            </div>
+            <div id="question5" class="panel-collapse collapse">
+              <div class="panel-body">
+                    <h5><span class="label label-primary">answer</span></h5>
+                    <p>
+                        You can administrate your html5 chat in the <a href='/chatadmin' title='chat admin panel'>chat admin panel.</a> You need your email/password to enter <a href='/chatadmin' title='chat admin panel'>chat admin.</a>                    </p>
+              </div>
+            </div>
+          </div>
+
+    <div class="panel panel-default ">
+        <div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question6">
+            <h4 class="panel-title">
+                <a href="#" class="ing"><i class="fa fa-question-circle"></i> Does html5 chat works on any browser ?</a>
+            </h4>
+        </div>
+        <div id="question6" class="panel-collapse collapse">
+            <div class="panel-body">
+                <h5><span class="label label-primary">answer</span></h5>
+                <p>
+                    yes: if works on any flash enabled browser. If you want a multi user chat using webrtc technology, please visit <a href='https://webrtc-chat.com/'>Html5 chat</a>                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div><!--/panel-->
+          
+              
+</div>
+    
+
+  
+
+
+<footer>
+    <div class="container clearfix">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/chat">Enter chat</a>
+            <a href="/register">Get chat</a>
+            <a href="/purchase">Purchase chat</a>
+            <a href="/features">Features</a>
+            <a href="/faq">FAQ</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </div>
+</footer>
+
+<div class="partenaires">
+	<a href="http://www.fox-poker.com">jeu de poker gratuit</a> | 
+    <a href="http://www.dialogoo.com">video chat in flash</a> |
+    <a href="https://webrtc-chat.com/">many to many webrtc video chat</a> |
+</div>
+
+<link rel='stylesheet' type='text/css' href='/css/font-awesome.min.css'>
+<link rel='stylesheet' type='text/css' href='/css/animate.css'>
+<link rel='stylesheet' type='text/css' href='/css/fonts.css'></body>
+</html>

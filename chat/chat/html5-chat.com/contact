@@ -1,0 +1,166 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Contact html5 chat</title>
+<meta name="description" content="Questions about html5 chat ? Contact our chat team and get answer to your question">
+
+<script src="/js/jquery-1.11.1.min.js"></script>
+<script src="/js/bootbox.min.js" defer></script>
+<script src="/js/bootstrap.min.js" defer></script>
+<script src="js/footer.js" defer></script><link rel='icon' type='image/png' href='/img/favicon.png' />
+<link rel='stylesheet' type='text/css' href='/css/bootstrap.min.css'>
+<link rel='stylesheet' type='text/css' href='/css/site.min.css'>
+
+<style>
+
+.centered-form {
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.centered-form .panel {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+h4{
+	margin-top:30px;
+}
+.contactInput {
+	font-size:2.2em;
+	border:5px solid #38AAFC;
+	border-radius:8px;
+    padding: 5px;
+	display:block;
+	margin:20px auto;
+	height: auto;
+}
+</style>
+</head>
+
+<body>
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+        <i class="fa fa-comments-o"></i> HTML5 Chat</h1>
+        <a href="#" id="menuLink">Menu</a>
+        <nav>            
+            <a href="/">Home</a>
+            <a href="/chat">Enter chat</a>
+            <a href="/register">Get chat</a>
+            <a href="/purchase">Purchase chat</a>
+            <a href="/features">Features</a>
+            <a href="/faq">FAQ</a>
+            <a href="/developers">Developers</a>
+         	<a href="/contact">Contact</a>
+        </nav>
+        
+        <div class="dropdown langue">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="/img/en.svg" class="flag" alt="en"> Langue
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="https://fr.html5-chat.com">Fr<img class="flag" src="/img/fr.svg" alt="version française" ></a></li>
+            <li><a href="https://html5-chat.com">En<img class="flag" src="/img/en.svg" alt="english version"></a></li>
+              <li><a href="https://es.html5-chat.com">Es<img class="flag" src="/img/es.svg" alt="Versión española"></a></li>
+              <li><a href="https://de.html5-chat.com">DE<img class="flag" src="/img/de.svg" alt="Deutsch Version"></a></li>
+              <li><a href="https://ru.html5-chat.com">RU<img class="flag" src="/img/ru.svg" alt="Russian Version"></a></li>
+          </ul>
+        </div>
+        <div id="adminDiv">
+        	<a href="/chatadmin"><i class="fa fa-lock"></i> Admin access</a>
+        </div>
+        
+        </div>
+        
+        
+    </div>
+</header><div class="container fadeInDown animated" id="container1">
+	<h4 style="text-align: center;">
+    	<p>Any question ? any recommendation ? any suggestion ?</p>
+     	<p>Please: fill this form: we will answer within 24 hours.</p>
+     </h4>
+        <div class="row centered-form">
+            <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center"><i class="fa fa-envelope-o"></i> Feel free to contact us !</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" id="formContact" method="post">
+                            <div class="form-group">
+                                <input type="text" name="username" value="yarek" id="username" class="form-control contactInput" placeholder="Enter your username" required>
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="email" value="yarekc+3@gmail.com" name="email" id="email" class="form-control  contactInput" placeholder="Enter your email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                            	<textarea name="question" class="form-control contactInput" id="question"  rows="5" required placeholder="Enter your question here"></textarea>
+                            </div>
+                            
+                            <input type="submit" value="Send question" class="btn btn-info btn-block">
+                        </form>
+
+                        <div align="center" style="margin-top: 20px">
+                            Proxymis, 24 rue de la cité, 59800 Lille France <br>
+                            Tel: + 3 33 3 20 31 92 29 (France)<br>
+                            Skype address: proxymis
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+  
+<script>
+$('#formContact').on('submit', function(e) { // or on button click' ?
+    e.preventDefault();
+    var valid = e.target.checkValidity();
+    if (valid) {
+		$('#formContact').unbind();
+        var email = $('#email').val();
+		var username = $('#username').val();
+		var question = $('#question').val();
+
+		$.post('/ajax.php', {'a':'contact', email:email, username:username, question:question}, function(result) {
+				console.log(result);
+				bootbox.alert('Your request has been sent !', function() {
+				window.location = '/';
+			});
+		});
+    }
+});
+</script>
+
+<footer>
+    <div class="container clearfix">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/chat">Enter chat</a>
+            <a href="/register">Get chat</a>
+            <a href="/purchase">Purchase chat</a>
+            <a href="/features">Features</a>
+            <a href="/faq">FAQ</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </div>
+</footer>
+
+<div class="partenaires">
+	<a href="http://www.fox-poker.com">jeu de poker gratuit</a> | 
+    <a href="http://www.dialogoo.com">video chat in flash</a> |
+    <a href="https://webrtc-chat.com/">many to many webrtc video chat</a> |
+</div>
+
+<link rel='stylesheet' type='text/css' href='/css/font-awesome.min.css'>
+<link rel='stylesheet' type='text/css' href='/css/animate.css'>
+<link rel='stylesheet' type='text/css' href='/css/fonts.css'></body>
+</html>

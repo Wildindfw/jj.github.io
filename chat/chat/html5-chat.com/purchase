@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Purchase HTML5 chat</title>
+<meta name="description" content="Purchase now html5 chat to be embedded into your existing web site">
+<script src="/js/jquery-1.11.1.min.js"></script>
+<script src="/js/bootbox.min.js" defer></script>
+<script src="/js/bootstrap.min.js" defer></script>
+<script src="js/footer.js" defer></script><link rel='icon' type='image/png' href='/img/favicon.png' />
+<link rel='stylesheet' type='text/css' href='/css/bootstrap.min.css'>
+<link rel='stylesheet' type='text/css' href='/css/site.min.css'>
+
+
+<style type="text/css">
+
+    .prices {
+        padding-bottom: 40px;
+        color: #666;
+    }
+
+    .pricing-tables-jumbotron {
+        text-align: center;
+        background: none;
+    }
+
+    .big {
+        font-size: 37px;
+    }
+    
+    .option {
+        background: #f9f9f9;
+        box-shadow: 0 0 1px rgba(0, 0, 0, .2);
+        border-radius: 4px 4px 0 0;
+        position: relative;
+        margin: 20px 0;
+        text-align: center;
+        color: #333;
+    }
+
+        .option:hover .hided-icon {
+            color: #fff;
+            padding: 0 10px;
+        }
+
+        .option > .option-title {
+            padding: 20px;
+        }
+
+            .option > .option-title > h3 {
+                font-weight: bold;
+                font-size: 32px;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            .option > .option-title > span {
+                font-style: italic;
+                font-size: 16px;
+            }
+
+        .option > .option-price {
+            background: #fff;
+            padding: 0 0 10px;
+            color: #0093FF;
+        }
+
+            .option > .option-price > .price {
+                display: block;
+                font-size: 72px;
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            .option > .option-price > .period {
+                font-size: 14px;
+            }
+
+        .option .option-list {
+            padding: 0;
+        }
+
+        .option .item-list {
+            list-style: none;
+            padding: 0;
+        }
+
+            .option .item-list li:nth-child(even) {
+                background: #fdfdfd;
+            }
+
+            .option .item-list > li {
+                padding: 10px 5px;
+                font-size: 16px;
+            }
+
+        .option .btn {
+            width: 100%;
+            padding: 18px 8px;
+            border-radius: 0;
+            border: none;
+            text-transform: uppercase;
+        }
+
+        .option .btn-success {
+            color: #fff;
+            background: #0093FF;
+        }
+
+            .option .btn-success:hover {
+                background: #0093FF;
+            }
+
+        .option .hided-icon {
+            color: #0093FF;
+            margin-left: -14px;
+            -webkit-transition: all 0.7s ease-in-out;
+            -moz-transition: all 0.7s ease-in-out;
+            -o-transition: all 0.7s ease-in-out;
+            transition: all 0.7s ease-in-out;
+        }
+</style>
+</head>
+
+<body>
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+        <i class="fa fa-comments-o"></i> HTML5 Chat</h1>
+        <a href="#" id="menuLink">Menu</a>
+        <nav>            
+            <a href="/">Home</a>
+            <a href="/chat">Enter chat</a>
+            <a href="/register">Get chat</a>
+            <a href="/purchase">Purchase chat</a>
+            <a href="/features">Features</a>
+            <a href="/faq">FAQ</a>
+            <a href="/developers">Developers</a>
+         	<a href="/contact">Contact</a>
+        </nav>
+        
+        <div class="dropdown langue">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="/img/en.svg" class="flag" alt="en"> Langue
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="https://fr.html5-chat.com">Fr<img class="flag" src="/img/fr.svg" alt="version française" ></a></li>
+            <li><a href="https://html5-chat.com">En<img class="flag" src="/img/en.svg" alt="english version"></a></li>
+              <li><a href="https://es.html5-chat.com">Es<img class="flag" src="/img/es.svg" alt="Versión española"></a></li>
+              <li><a href="https://de.html5-chat.com">DE<img class="flag" src="/img/de.svg" alt="Deutsch Version"></a></li>
+              <li><a href="https://ru.html5-chat.com">RU<img class="flag" src="/img/ru.svg" alt="Russian Version"></a></li>
+          </ul>
+        </div>
+        <div id="adminDiv">
+        	<a href="/chatadmin"><i class="fa fa-lock"></i> Admin access</a>
+        </div>
+        
+        </div>
+        
+        
+    </div>
+</header>
+
+<div class="container prices fadeInDown animated">
+
+
+
+    <div class="row">
+        <div class="col-sm-4 col-md-4">
+            <div class="option">
+                <div class="option-title">
+                    <h3>Free</h3>
+                    <span>100% free version</span>
+                </div>
+                <div class="option-price">
+                    <span class="price">$0</span>
+                    <span class="period">- </span>
+                </div>
+                <div class="option-list">
+                    <ul class="item-list">
+                        <li><strong>Free chat</strong></li>
+                        <li><strong>4 max webcams</strong></li>
+                        <li><strong>3 max rooms</strong></li>
+                        <li><strong>50 users max</strong></li>
+                        <li><div class="qr" id="order1"></div></li>
+                    </ul>
+                    <a href="/register" id="freeBtn"  class="btn btn-success big"><i class="fa fa-hand-o-right hided-icon big"></i> Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <div class="option">
+                <div class="option-title">
+                    <h3>Full</h3>
+                    <span>Full registered version</span>
+                </div>
+
+                <div class="option-price">
+                    <span class="price">$99</span>
+                    <span class="period">per year</span>
+                </div>
+
+                <div class="option-list">
+                    <ul class="item-list">
+                        <li><strong>Full registered version</strong></li>
+                        <li><strong>No webcam limit</strong></li>
+                        <li><strong>Unlimited room</strong></li>
+                        <li><strong>No limitations, no ads</strong></li>
+                        <li><div class="qr" id="order2"></div></li>
+                    </ul>
+                    <a href=""  id="fullBtn"  type="button" class="btn btn-success big"><i class="fa fa-hand-o-right hided-icon big"></i> Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4">
+            <div class="option">
+                <div class="option-title">
+                    <h3>Source code</h3>
+                    <span>extended version</span>
+                </div>
+
+                <div class="option-price">
+                    <span class="price">$990</span>
+                    <span class="period">-</span>
+                </div>
+
+                <div class="option-list">
+                    <ul class="item-list">
+                        <li><strong>Inlcudes full source code</strong></li>
+                        <li><strong>Allows you to run on your server</strong></li>
+                        <li><strong>Support included</strong></li>
+                        <li><strong>Updates included for 12 months</strong></li>
+                        <li><div class="qr" id="order3"></div></li>
+                    </ul>
+                    <a href=""   id="sourceBtn" type="button" class="btn btn-success big"><i class="fa fa-hand-o-right hided-icon big"></i> Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.row -->
+</div><!-- /.container -->
+
+<form id="fullForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="SEMPJV25PAFQJ">
+    <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+<form id="sourceForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="LKJGGW3C9E6LS">
+    <img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+
+<script>
+$("#fullBtn").click(function(e) {
+	e.preventDefault();
+    $("#fullForm").submit();
+});
+$("#sourceBtn").click(function(e) {
+	e.preventDefault();
+    $("#sourceForm").submit();
+});
+</script>
+
+
+<footer>
+    <div class="container clearfix">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/chat">Enter chat</a>
+            <a href="/register">Get chat</a>
+            <a href="/purchase">Purchase chat</a>
+            <a href="/features">Features</a>
+            <a href="/faq">FAQ</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </div>
+</footer>
+
+<div class="partenaires">
+	<a href="http://www.fox-poker.com">jeu de poker gratuit</a> | 
+    <a href="http://www.dialogoo.com">video chat in flash</a> |
+    <a href="https://webrtc-chat.com/">many to many webrtc video chat</a> |
+</div>
+
+<link rel='stylesheet' type='text/css' href='/css/font-awesome.min.css'>
+<link rel='stylesheet' type='text/css' href='/css/animate.css'>
+<link rel='stylesheet' type='text/css' href='/css/fonts.css'>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Developers API HTML5 chat</title>
+<meta name="description" content="Technical questions about your html5 chat ? We are here to help you">
+<script src="/js/jquery-1.11.1.min.js"></script>
+<script src="/js/bootbox.min.js" defer></script>
+<script src="/js/bootstrap.min.js" defer></script>
+<script src="js/footer.js" defer></script><link rel='icon' type='image/png' href='/img/favicon.png' />
+<link rel='stylesheet' type='text/css' href='/css/bootstrap.min.css'>
+<link rel='stylesheet' type='text/css' href='/css/site.min.css'>
+
+<style>
+.main {
+	
+}
+.step {
+	padding:10px;
+	background-color: #F1F1F1;
+	margin:10px;
+	border-bottom:1px solid #CCC;
+}
+</style>
+
+</head>
+
+
+<body>
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+        <i class="fa fa-comments-o"></i> HTML5 Chat</h1>
+        <a href="#" id="menuLink">Menu</a>
+        <nav>            
+            <a href="/">Home</a>
+            <a href="/chat">Enter chat</a>
+            <a href="/register">Get chat</a>
+            <a href="/purchase">Purchase chat</a>
+            <a href="/features">Features</a>
+            <a href="/faq">FAQ</a>
+            <a href="/developers">Developers</a>
+         	<a href="/contact">Contact</a>
+        </nav>
+        
+        <div class="dropdown langue">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="/img/en.svg" class="flag" alt="en"> Langue
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="https://fr.html5-chat.com">Fr<img class="flag" src="/img/fr.svg" alt="version française" ></a></li>
+            <li><a href="https://html5-chat.com">En<img class="flag" src="/img/en.svg" alt="english version"></a></li>
+              <li><a href="https://es.html5-chat.com">Es<img class="flag" src="/img/es.svg" alt="Versión española"></a></li>
+              <li><a href="https://de.html5-chat.com">DE<img class="flag" src="/img/de.svg" alt="Deutsch Version"></a></li>
+              <li><a href="https://ru.html5-chat.com">RU<img class="flag" src="/img/ru.svg" alt="Russian Version"></a></li>
+          </ul>
+        </div>
+        <div id="adminDiv">
+        	<a href="/chatadmin"><i class="fa fa-lock"></i> Admin access</a>
+        </div>
+        
+        </div>
+        
+        
+    </div>
+</header>
+
+<section class="container fadeInDown animated">
+
+
+	<h3></h3>
+    Support is included in <a href='/purchase' title='purchase html5 chat'>paid version of the chat</a>    <br>
+    Quick tips how to integrate your video chat into your website:
+	<div class="step">
+   		<p>To integrate it into your existing website, you just have to copy/paste the script you received when <a href='/register' title='register the html5 chat'>you registered the chat</a></p>
+        <p>script looks like:<br>
+          <br>
+          <strong>&lt;script src='https://html5-chat.com/script/id/uniqueKey&gt;&lt;/script&gt;</strong><br>
+          <br>
+	       where id is your id script and uniqueKey is a token.<br>
+          Notice that you can also integrate a direct link to you chat:
+          <br>
+          <br>
+        <strong>https://html5-chat.com/chat/id/uniqueKey </strong></p>
+    </div>
+    <div class="step">
+	    <p>If you have lost your data, just <a href='/chatadmin' title='chat admin panel'>login into your panel admin</a> and you can retrieve these data from there</p>
+    </div>
+    
+<div class="step">
+	    <p><b>How to change the dimension of the chat ?</b></p>
+        <p>chat uses iframe to be embedded into your site. The idea is so to included that iframe into your existing element (div) and it will take 100% of that element.</p>
+    <p>ex: I want the chat to be 640px width and 480px height: just create a div of 640px x 480px and embed the script inside !</p>
+        <p><strong>&lt;div style=&quot;width:640px;height;480px&quot;&gt;&lt;script src='https://html5-chat.com/script/id/uniqueKey&gt;&lt;/script&gt;&lt;/div&gt;</strong></p>
+    </div>     
+    
+    <div class="step">
+	    <p><b>Question: I have my website ready and I manage my users by myself. How to integrate it with my existing database ?</b></p>
+        <p>This is possible with HTML5 chat!</p>
+    </div>    
+
+	<div class="step">
+    	<p>More questions ?<a href="/contact" title="contact html5 chat"> Please contact us !</a></p>
+    </div>
+
+
+</section>
+	
+
+<footer>
+    <div class="container clearfix">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/chat">Enter chat</a>
+            <a href="/register">Get chat</a>
+            <a href="/purchase">Purchase chat</a>
+            <a href="/features">Features</a>
+            <a href="/faq">FAQ</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </div>
+</footer>
+
+<div class="partenaires">
+	<a href="http://www.fox-poker.com">jeu de poker gratuit</a> | 
+    <a href="http://www.dialogoo.com">video chat in flash</a> |
+    <a href="https://webrtc-chat.com/">many to many webrtc video chat</a> |
+</div>
+
+<link rel='stylesheet' type='text/css' href='/css/font-awesome.min.css'>
+<link rel='stylesheet' type='text/css' href='/css/animate.css'>
+<link rel='stylesheet' type='text/css' href='/css/fonts.css'></body>
+
+
+</html>

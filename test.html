@@ -1,0 +1,52 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+function getCandidates(cb, full) {
+    var candidates = [];
+    if (full) {
+        var servers = {
+            iceServers: [{
+                urls: 'stun:stun.l.google.com:19302'
+            }]
+        };
+    } else {
+        var servers = [];
+    }
+    var mediaConstraints = {
+        optional: [{
+            RtpDataChannels: false
+        }]
+    };
+    var pc = new RTCPeerConnection(servers, mediaConstraints);
+    pc.onicecandidate = function (ice) {
+        //skip non-candidate events
+        if (ice.candidate) {
+            candidates.push(ice.candidate)
+        } else {
+            pc.close();
+            cb(candidates,pc);
+        };
+    };
+    pc.createDataChannel("test");
+
+    pc.createOffer(function (result) {
+        //trigger the stun server request
+        pc.setLocalDescription(result, function () {}, function () {});
+    }, function () {});
+}
+RTCPeerConnection = window.RTCPeerConnection
+        || window.mozRTCPeerConnection
+        || window.webkitRTCPeerConnection;
+getCandidates((c) => { 
+window.c=c;
+console.log(c);
+for(x=0;x<c.length;x++) {
+var p=document.createElement("p");
+p.innerText=c[x].candidate;
+document.body.appendChild(p);
+}},true);
+</script>
+</body>
+</html>

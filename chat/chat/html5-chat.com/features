@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Feature list of the html5 chat</title>
+<script src="/js/jquery-1.11.1.min.js"></script>
+<script src="/js/bootbox.min.js" defer></script>
+<script src="/js/bootstrap.min.js" defer></script>
+<script src="js/footer.js" defer></script><link rel='icon' type='image/png' href='/img/favicon.png' />
+<link rel='stylesheet' type='text/css' href='/css/bootstrap.min.css'>
+<link rel='stylesheet' type='text/css' href='/css/site.min.css'>
+
+<style>
+.main {
+	
+}
+ul li {
+	margin:10px;
+}
+</style>
+</head>
+
+<body>
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+        <i class="fa fa-comments-o"></i> HTML5 Chat</h1>
+        <a href="#" id="menuLink">Menu</a>
+        <nav>            
+            <a href="/">Home</a>
+            <a href="/chat">Enter chat</a>
+            <a href="/register">Get chat</a>
+            <a href="/purchase">Purchase chat</a>
+            <a href="/features">Features</a>
+            <a href="/faq">FAQ</a>
+            <a href="/developers">Developers</a>
+         	<a href="/contact">Contact</a>
+        </nav>
+        
+        <div class="dropdown langue">
+          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><img src="/img/en.svg" class="flag" alt="en"> Langue
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="https://fr.html5-chat.com">Fr<img class="flag" src="/img/fr.svg" alt="version française" ></a></li>
+            <li><a href="https://html5-chat.com">En<img class="flag" src="/img/en.svg" alt="english version"></a></li>
+              <li><a href="https://es.html5-chat.com">Es<img class="flag" src="/img/es.svg" alt="Versión española"></a></li>
+              <li><a href="https://de.html5-chat.com">DE<img class="flag" src="/img/de.svg" alt="Deutsch Version"></a></li>
+              <li><a href="https://ru.html5-chat.com">RU<img class="flag" src="/img/ru.svg" alt="Russian Version"></a></li>
+          </ul>
+        </div>
+        <div id="adminDiv">
+        	<a href="/chatadmin"><i class="fa fa-lock"></i> Admin access</a>
+        </div>
+        
+        </div>
+        
+        
+    </div>
+</header>
+<section class="container fadeInDown animated">
+	<h2>Here is an inexhaustive list of the html5 chat features</h2>
+    We are keeping add new features every week. If you think an important feature is missing, please feel <a href="/contact" title="suggest feature">free to suggest it</a></p>
+
+
+    
+  <h3>Here are some features of our video webcam chat:</h3>
+    <ul class="home">
+        <li>Our html5 is based on sockets</li>
+        <li>Major browser compatibility</li>
+        <li>Tab mode: every private opens in a new private tab</li>
+        <li>Window mode: every chat opens in a new draggable window</li>
+        <li>Conference mode: there is one streamer and many listeners: suitable for shows/e-learning etc...</li>
+        <li>Individual draggable webcam support</li>
+        <li>Full screen webcam support</li>
+        <li>full <a href='/chatadmin' title='chat admin panel'>admin panel to administrate/customize your chat</a></li>
+        <li>Customized Look'n feel: make it look like your website</li>
+        <li>integrate : 1 line of code to be inserted !</li>
+        <li>Direct link to your chat</li>
+        <li>Auto login feature: so you can plugin to your existing database users</li>
+        <li>Moderation features: Inludes moderation features(kick/ban/warn)</li>
+        <li>Modern Ppure GUI, easy to customize to your needs</li>
+        <li>More than 100 features included and growing every day</li>
+        <li>Full user managment: add/remove/edit/password</li>
+        <li>Rooms management: add/edit/remove users or protect rooms with passwords</li>
+        <li>Gender management : customized it to your genders or roles</li>
+        <li>Private or public webcams managements</li>
+        <li>Private or public chats on invitation</li>
+        <li>User filtering by gender, by username</li>
+        <li>Wo's watching me feature</li>
+        <li>Mute an user feature</li>
+        <li>and so much more...</li>
+    </ul>
+    <div class="row">
+    <a href="/chat">Try it now to have a look at all features you can get !</a>
+    
+    </div>
+    
+    
+
+</section>
+	
+
+<footer>
+    <div class="container clearfix">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/chat">Enter chat</a>
+            <a href="/register">Get chat</a>
+            <a href="/purchase">Purchase chat</a>
+            <a href="/features">Features</a>
+            <a href="/faq">FAQ</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </div>
+</footer>
+
+<div class="partenaires">
+	<a href="http://www.fox-poker.com">jeu de poker gratuit</a> | 
+    <a href="http://www.dialogoo.com">video chat in flash</a> |
+    <a href="https://webrtc-chat.com/">many to many webrtc video chat</a> |
+</div>
+
+<link rel='stylesheet' type='text/css' href='/css/font-awesome.min.css'>
+<link rel='stylesheet' type='text/css' href='/css/animate.css'>
+<link rel='stylesheet' type='text/css' href='/css/fonts.css'></body>
+
+
+</html>
